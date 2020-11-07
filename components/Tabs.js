@@ -25,14 +25,11 @@ axios.get('https://lambda-times-api.herokuapp.com/topics')
 })
 .catch(err => console.log(err));
 
-
-
-
-
-function createTabs(obj) {
+function createTabs(topic) {
     const tab = document.createElement('div');
         tab.classList.add('tab');
-        tab.textContent = obj.data.topics;
+        tab.textContent = topic;
+        console.log(tab)
 
     const topics = document.querySelector('.topics');
     topics.appendChild.tab;
